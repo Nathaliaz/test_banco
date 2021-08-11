@@ -9,4 +9,3 @@ Feature: Ingresar a ebay
     Examples:
       | product | items | 
       | pilas | 123 | 
-      
