@@ -14,7 +14,9 @@ When(/^I search for (\w+)$/, async (product) => {
     await pages.search.search(product)
 });
 
-Then(/^I should see items results (\w+)/, async (items) => {
-    console.log("items: ", items)
+Then('I should see items results', async () => {
+    const h1 = await $('.srp-controls__count-heading')
+    const numberOfResults = await h1.getText()
+    console.log("Resultados: ", numberOfResults)
 });
 

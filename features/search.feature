@@ -4,8 +4,8 @@ Feature: Ingresar a ebay
 
     Given I am in ebay page
     When I search for <product>
-    Then I should see items results <items>
+    Then I should see items results
 
     Examples:
-      | product | items | 
-      | pilas | 123 | 
+      | product |
+      | pilas |
